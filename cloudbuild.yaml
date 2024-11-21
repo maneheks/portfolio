@@ -1,0 +1,5 @@
+steps:
+- name: 'gcr.io/cloudbuild-templates/docker'
+  args: ['build', '-t', 'us-docker.pkg.dev/cloudrun/container/portfolio', '.']
+- name: 'gcr.io/cloudbuild-templates/docker'
+  args: ['push', 'us-docker.pkg.dev/cloudrun/container/portfolio']
