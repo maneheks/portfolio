@@ -1,3 +1,5 @@
+logsBucket: "portfolio-logs-bucket"
+
 steps:
 - name: 'gcr.io/cloudbuild-templates/docker'
   args: ['build', '-t', 'us-docker.pkg.dev/cloudrun/container/portfolio', '.']
